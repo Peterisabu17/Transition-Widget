@@ -1,0 +1,141 @@
+/* .icon {
+  height: 30px;
+  width: 30px;
+ } */
+
+:root {
+  --white: #FFF;
+  --gray: #363638;
+  --gray-mid: #9D9D9D;
+  --gray-dark: #3e3e3e;
+  --gray-hover: #F7F7F7;
+  --body-background: #1F192D;
+  --primary: #5f447c;
+  --primary-border: #42375d;
+  --text: #CEC0E0;
+  --widget-background: #52315f;
+}
+
+body {
+  font-family: Poppins;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100hv;
+  padding: 16px;
+  background-color: var(--body-background);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tabs-container {
+  padding: 16px;
+  width: 100%;
+  max-width: 480px;
+  min-width: 320px;
+  display: flex;
+  margin: 10px;
+  border-radius: 16px;
+  background-color: var(--widget-background);
+  border: 1px solid var(--primary-border);
+}
+
+.tab-content-wrapper {
+  overflow-y: hidden;
+  overflow-x: auto;
+  height: 300px;
+  transition: all 0.45s ease-in-out;
+  padding: 0 16p;
+}
+
+.tab-content h2 {
+  color: rgba(199, 194, 194, 0.904);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.tab-content {
+  font-size: 0.8rem;
+  min-height: 300px;
+  min-width: 240px;
+  color: var(--white);
+  overflow-x: auto;
+  transition: all 0.45s ease-in-out;
+}
+
+.tab-content img {
+  width: 100%;
+  height: auto;
+  margin-top: 16px;
+}
+
+.tab-content p {
+  color: rgba(199, 194, 194, 0.904);
+  font-size: 12px;
+}
+
+
+.tabs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-right: none;
+  list-style-type: none;
+  padding-right: 16px;
+  gap: 8px;
+}
+
+.tabs a {
+  position: relative;
+  display: flex;
+  text-decoration: none;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  border-radius: 8px;
+  justify-content: start;
+  padding: 12px;
+  align-items: center;
+  gap: 8px;
+  color: rgba(199, 194, 194, 0.904);
+  user-select: none;
+  border: 1px solid transparent;
+  transition: all 0.45s ease-out;
+}
+
+.tabs a img {
+  height: 30px;
+  width: 30px;
+  color: white;
+  fill: white;
+}
+
+.tabs .active,
+.tabs a:hover {
+  color: black;
+  outline: none;
+  background-color: var(--primary);
+  border: 1px solid var(--primary-border);
+}
+
+.tabs a svg {
+  stroke: var(--white);
+}
+
+.tabs .active svg {
+  stroke: var(--white);
+}
+
+.tabs a:hover svg {
+  stroke: var(--white);
+}
+
+
+
